@@ -64,24 +64,19 @@ utilize flask to serve a simple html file with some simple CSS
 git clone git@github.com:NickHerrig/motor-dashboard.git
 ```
 
-- Create a python virtual enviornment and source it
+- Build the application
 ```shell
-python3 -m venv venv  && source venv/bin/activate
+Make build
 ```
 
-- Pip install dependencies 
+- Run the application
 ```shell
-pip install -r requirements.txt 
+Make run 
 ```
 
-- Temporarily export the FLASK_APP environment variable
-```shell
-export FLASK_APP=app.py 
-```
+- Navigate to the dashboard at http://localhost:5000 
 
-- Run flask app from motor-dashboard/
+- Clean up 
 ```shell
-flask run
+Make clean 
 ```
-
-- Navigate to dashboard at http://localhost:5000 

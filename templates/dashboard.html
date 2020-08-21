@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scae=1">
+    <title>Servo Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="static/css/mvp.css">
+  </head>
+  <body>
+        <section>
+            <header>
+                <h2>Servo Motor Dashboard</h2>
+                <p>Date: {{ date }}</p>
+            </header>
+            {% for server in data %} 
+            <aside>
+                <h3>Motor ID: {{ server.servoID }}</h3>
+                <p>Motor Position: {{ server.position }}</p>
+                <p>Server Calibration:  {{ server.isCalibrated }}</p>
+            </aside>
+            {% endfor %}
+        </section>
+  </body>
+</html>
